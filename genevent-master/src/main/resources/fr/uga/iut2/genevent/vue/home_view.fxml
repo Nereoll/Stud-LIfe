@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="1030.0" prefWidth="1920.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.uga.iut2.genevent.vue.VueHome">
+   <ScrollPane hbarPolicy="NEVER" prefHeight="1006.0" prefWidth="1920.0" styleClass="scrollPane" stylesheets="@da.css">
+      <content>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="1920.0" spacing="20.0">
+            <children>
+               <Label styleClass="indexTitle" stylesheets="@da.css" text="Nos recommandations">
+                  <VBox.margin>
+                     <Insets bottom="30.0" />
+                  </VBox.margin>
+               </Label>
+               <HBox alignment="CENTER" prefHeight="450.0" prefWidth="1920.0" spacing="150.0">
+                  <children>
+                     <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" styleClass="recommendationCard" stylesheets="@da.css">
+                        <children>
+                           <Button fx:id="btnSunValley" onAction="#OnRecomendationclickSunValley" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                              <graphic>
+                                 <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+                                    <image>
+                                       <Image url="@images/sunValley.jpg" />
+                                    </image>
+                                    <StackPane.margin>
+                                       <Insets top="50.0" />
+                                    </StackPane.margin>
+                                 </ImageView>
+                              </graphic>
+                              <StackPane.margin>
+                                 <Insets top="50.0" />
+                              </StackPane.margin>
+                           </Button>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="Sun Valley">
+                              <StackPane.margin>
+                                 <Insets bottom="180.0" />
+                              </StackPane.margin>
+                           </Label>
+                           <Label text="⭐⭐⭐⭐" style="-fx-text-fill: #FFC403">
+                              <StackPane.margin>
+                                 <Insets bottom="130.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin>
+                     </StackPane>
+                     <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" styleClass="recommendationCard" stylesheets="@da.css">
+                        <children>
+                           <Button fx:id="btnLaFabryk" onAction="#OnRecomendationclickLaFabryk" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                              <graphic>
+                                 <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+                                    <StackPane.margin>
+                                       <Insets top="50.0" />
+                                    </StackPane.margin>
+                                    <image>
+                                       <Image url="@images/fabryk.jpg" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                              <StackPane.margin>
+                                 <Insets top="50.0" />
+                              </StackPane.margin>
+                           </Button>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="La Fabryk">
+                              <StackPane.margin>
+                                 <Insets bottom="180.0" />
+                              </StackPane.margin>
+                           </Label>
+                           <Label text="⭐⭐⭐⭐⭐" style="-fx-text-fill: #FFC403">
+                              <StackPane.margin>
+                                 <Insets bottom="130.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                     </StackPane>
+                     <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" styleClass="recommendationCard" stylesheets="@da.css">
+                        <children>
+                           <Button fx:id="btnKFeedesJeux" onAction="#OnRecomendationclickKFeedesJeux" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                              <graphic>
+                                 <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+                                    <StackPane.margin>
+                                       <Insets top="50.0" />
+                                    </StackPane.margin>
+                                    <image>
+                                       <Image url="@images/kfeeJeux.jpg" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                              <StackPane.margin>
+                                 <Insets top="50.0" />
+                              </StackPane.margin>
+                           </Button>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="K Fée des Jeux">
+                              <StackPane.margin>
+                                 <Insets bottom="180.0" />
+                              </StackPane.margin>
+                           </Label>
+                           <Label text="⭐⭐⭐⭐⭐" style="-fx-text-fill: #FFC403">
+                              <StackPane.margin>
+                                 <Insets bottom="130.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                     </StackPane>
+                     <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" styleClass="recommendationCard" stylesheets="@da.css">
+                        <children>
+                           <Button fx:id="btnAuDetour" onAction="#OnRecomendationclickAuDetour" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                              <graphic>
+                                 <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true">
+                                    <StackPane.margin>
+                                       <Insets top="50.0" />
+                                    </StackPane.margin>
+                                    <image>
+                                       <Image url="@images/auDetour.jpg" />
+                                    </image>
+                                 </ImageView>
+                              </graphic>
+                              <StackPane.margin>
+                                 <Insets top="50.0" />
+                              </StackPane.margin>
+                           </Button>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="Au Détour">
+                              <StackPane.margin>
+                                 <Insets bottom="180.0" />
+                              </StackPane.margin>
+                           </Label>
+                           <Label text="⭐⭐⭐⭐" style="-fx-text-fill: #FFC403">
+                              <StackPane.margin>
+                                 <Insets bottom="130.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                     </StackPane>
+                  </children>
+
+               </HBox>
+               <Label styleClass="indexTitle" stylesheets="@da.css" text="Ou" />
+               <Label styleClass="indexTitle" stylesheets="@da.css" text="Choisissez une catégorie" />
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="400.0">
+                  <children>
+                     <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="categorieCards">
+                        <children>
+                           <ImageView fx:id="bar" fitHeight="400.0" fitWidth="650.0" onMouseClicked="#OnBar" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@images/exampleBar.jpg" />
+                              </image>
+                           </ImageView>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="Bar" >
+                              <StackPane.margin>
+                                 <Insets bottom="350.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                     </StackPane>
+                     <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="categorieCards">
+                        <children>
+                           <ImageView fx:id="nightclub" fitHeight="400.0" fitWidth="650.0" onMouseClicked="#OnNightClubClick" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@images/exampleNightclub.jpg" />
+                              </image>
+                           </ImageView>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="Nightclub">
+                              <StackPane.margin>
+                                 <Insets bottom="350.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                     </StackPane>
+                  </children>
+                  <VBox.margin>
+                     <Insets top="30.0" />
+                  </VBox.margin>
+               </HBox>
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="400.0">
+                  <children>
+                     <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="categorieCards">
+                        <children>
+                           <ImageView fx:id="laserGame" fitHeight="400.0" fitWidth="650.0" onMouseClicked="#OnLaserGame" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@images/exampleLaserGame.jpg" />
+                              </image>
+                           </ImageView>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="Laser Games">
+                              <StackPane.margin>
+                                 <Insets bottom="350.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                     </StackPane>
+                     <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="categorieCards">
+                        <children>
+                           <ImageView fx:id="bowling" fitHeight="400.0" fitWidth="650.0" onMouseClicked="#OnBowling" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@images/exampleBowling.jpg" />
+                              </image>
+                           </ImageView>
+                           <Label styleClass="recommendationTitle" stylesheets="@da.css" text="Bowling">
+                              <StackPane.margin>
+                                 <Insets bottom="350.0" />
+                              </StackPane.margin>
+                           </Label>
+                        </children>
+                     </StackPane>
+                  </children>
+                  <VBox.margin>
+                     <Insets top="40.0" />
+                  </VBox.margin>
+               </HBox>
+            </children>
+         </VBox>
+      </content>
+   </ScrollPane>
+</VBox>

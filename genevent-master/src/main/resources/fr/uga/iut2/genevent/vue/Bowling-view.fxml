@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@da.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.uga.iut2.genevent.vue.VueBowling">
+    <top>
+        <fx:include source="navbar.fxml" />
+    </top>
+
+    <center>
+        <VBox alignment="TOP_CENTER">
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                <children>
+                    <ImageView fx:id="arrowBack" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#OnArrowClick" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@icons/icons8-arrow-48.png" />
+                        </image>
+                        <HBox.margin>
+                            <Insets left="20.0" />
+                        </HBox.margin>
+                    </ImageView>
+                    <Label text="Les Bowlings">
+                        <font>
+                            <Font size="30.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets left="800.0" />
+                        </HBox.margin>
+                    </Label>
+                </children>
+            </HBox>
+            <ScrollPane fx:id="scrollPane" prefHeight="850.0" prefWidth="200.0">
+                <content>
+                    <VBox fx:id="bowlingVBox" style="-fx-background-color: #7978F6;;">
+
+                    </VBox>
+                </content>
+                <VBox.margin>
+                    <Insets left="580.0" right="580.0" />
+                </VBox.margin>
+            </ScrollPane>
+        </VBox>
+    </center>
+</BorderPane>

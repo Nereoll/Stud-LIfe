@@ -1,0 +1,188 @@
+
+
+* {
+    -fx-font-family: "Noto Sans";
+    -fx-font-weight: bolder;
+}
+.navbar {
+    -fx-background-color: #7978F6;
+    -fx-spacing: 30px;
+    -fx-border-color :  #010C0E;
+    -fx-border-width: 0 0 2 0;
+}
+.navbar_elem{
+    -fx-background-color: #7978F6;
+    -fx-font-weight: bolder;
+    -fx-font-size: 15px;
+}
+.navbar_elem:hover{
+    -fx-background-color: #774AF2;
+    
+}
+.navbar_elem Label{
+    -fx-text-fill: white;
+}
+
+
+.recommendationTitle{
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bolder;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+.recommendationCard{
+    -fx-background-color: #7978F6;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: black;
+}
+.recommendationCard:hover{
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-background-color: #774AF2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+.recommendationDesc{
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bolder;
+    -fx-background-color: transparent;
+}
+.recommendationDesc .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.recommendationDesc .scroll-pane .content{
+    -fx-background-color: transparent;
+    
+}
+
+.indexTitle {
+    -fx-font-size: 30px;
+    -fx-font-weight: bolder;
+}
+
+.button {
+    -fx-font-size: 20px;
+    -fx-font-weight: bolder;
+    -fx-border-width: 2px;
+    -fx-background-color:#7978F6;
+    -fx-background-radius: 50;
+    -fx-background-insets: 1, 1; /* Couche extérieure (pas de marge), couche intérieure (1px de marge) */
+    -fx-border-radius: 50%; /* Assure que la bordure suit également les coins arrondis */
+    -fx-border-color: #774AF2; /* Bordure transparente si nécessaire */
+    -fx-min-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-padding: 10px 25px;
+    -fx-font-size: 16px; /* Taille de la police du texte */
+    -fx-text-fill: white;
+}
+.button:hover {
+    
+    -fx-background-color: #774AF2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+    
+  }
+
+.check_button{
+    -fx-font-weight: bolder;
+    -fx-border-width: 0px;
+    -fx-min-width: 0px;
+    -fx-pref-height: 0px;
+    -fx-padding: 0px 0px;
+    -fx-font-size: 40px; /* Taille de la police du texte */
+    -fx-text-fill: white;
+}
+
+
+.info_button{
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-min-width: 10px;
+    -fx-pref-height: 20px;
+    -fx-padding: 3px 12px;
+    -fx-font-size: 20px; /* Taille de la police du texte */
+    -fx-text-fill: white;
+
+}
+
+.scrollPane{
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+.scrollPaneBorder{
+    -fx-background-color: #acabfa;
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+}
+.mapItems{
+    -fx-background-color: #7978F6;
+    -fx-border-color: black;
+    -fx-border-width: 4px;
+}
+.mapItems ImageView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 2, 10, 0,0);
+}
+.mapItems TextArea{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-effect: none;
+}
+.mapScrollPane > .viewport{
+    -fx-background-color: #774AF2;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.infosEtoiles{
+    -fx-font-size: 20px;
+    -fx-text-fill: #FFC403;
+    -fx-font-weight: bolder;
+}
+.InfoBarContainer{
+    -fx-background-color: #7978F6;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+.InfoBarContainer TextArea{
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-border-color: white;
+    -fx-border-width: 0px;
+}
+
+.InfoBarContainer TextArea .content{
+    -fx-background-color: transparent, white, transparent, white;
+    
+}
+.InfoBarContainer TextArea *.text{
+    -fx-text-alignment: center;
+    -fx-alignement: center;
+
+}
+.error{
+    -fx-control-inner-background: #f8d7da;
+}
+
+.categorieCards:hover{
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-background-color: #774AF2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+.tooltip {
+    -fx-background: rgba(30,30,30);
+    -fx-text-fill: white;
+    -fx-background-color: rgba(30,30,30,0.8);
+    -fx-background-radius: 6px;
+    -fx-background-insets: 0;
+    -fx-padding: 0.667em 0.75em 0.667em 0.75em; /* 10px */
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 10, 0.0 , 0 , 3 );
+    -fx-font-size: 0.85em;
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="600.0" styleClass="InfoBarContainer" stylesheets="@da.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <TextArea fx:id="autreBar" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="413.0" prefWidth="291.0" wrapText="true" />
+            <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="291.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="136.75" minHeight="10.0" prefHeight="135.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.75" minHeight="30.0" prefHeight="135.5" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="136.75" minHeight="30.0" prefHeight="135.5" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="136.75" minHeight="10.0" prefHeight="135.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.75" minHeight="10.0" prefHeight="135.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.75" minHeight="10.0" prefHeight="135.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.75" minHeight="10.0" prefHeight="135.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.75" minHeight="10.0" prefHeight="135.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="136.75" minHeight="10.0" prefHeight="135.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="138.5" minHeight="10.0" prefHeight="138.5" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="infoBarRooftop" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label text="Type : " />
+                  <Label fx:id="infoBarType" text="Label" GridPane.columnIndex="1" />
+                  <Label text="Description : " GridPane.rowIndex="2" />
+                  <Label text="Heure d'ouverture : " GridPane.rowIndex="4" />
+                  <Label text="Heure de fermeture : " GridPane.rowIndex="5" />
+                  <Label text="Capacité : " GridPane.rowIndex="6" />
+                  <Label text="Extérieur : " GridPane.rowIndex="7" />
+                  <Label text="Rooftop : " GridPane.rowIndex="8" />
+                  <Label text="Nombre d'etage : " GridPane.rowIndex="9" />
+                  <Label fx:id="infoBarOH" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="infoBarCH" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="infoBarCapa" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="infoBarExte" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="infoBarEtages" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextArea fx:id="infoBarDesc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="121.0" prefWidth="145.0" styleClass="InfoBarContainer" stylesheets="@da.css" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+      <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="449.0" spacing="10.0">
+         <children>
+            <Label fx:id="nomBar" styleClass="indexTitle" stylesheets="@da.css" text="Nom de bar" />
+            <Label fx:id="starBar" styleClass="infosEtoiles" stylesheets="@da.css" text="★" />
+            <ImageView fx:id="imageBar" fitHeight="164.0" fitWidth="214.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+            <TextArea fx:id="coordonnéesBar" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="149.0" prefWidth="240.0" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

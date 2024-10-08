@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="192.0" prefWidth="900.0" stylesheets="@da.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="991.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="793.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="42.0" prefWidth="386.0" text="Nom de l'évenement :">
+                     <font>
+                        <Font size="30.0" />
+                     </font></Label>
+                  <TextField fx:id="tf_evenement" prefHeight="37.0" prefWidth="410.0" promptText="Entrez le nom de l'evenement">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="525.0" prefWidth="1030.0" spacing="40.0">
+               <children>
+                  <VBox prefHeight="332.0" prefWidth="328.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="36.0" prefWidth="326.0">
+                           <children>
+                              <Label prefHeight="42.0" prefWidth="308.0" text="Date de reservation">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <DatePicker fx:id="df_Date" editable="false" prefWidth="320.0" promptText="Selectionnez une date" />
+                              <Label fx:id="erreur_date" text="Veuillez choisir une date" textFill="RED" visible="false">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="46.0" prefWidth="326.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="304.0" text="Heure de début">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="sp_Heure" editable="true" prefWidth="320.0" promptText="Selectionnez une heure" />
+                              <Label fx:id="erreur_heure" text="Veuillez choisisr une heure" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="7.0" prefWidth="326.0">
+                           <children>
+                              <Label fx:id="nb_personnes" prefHeight="25.0" prefWidth="337.0" text="Nombre de Personnes (max : )">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Spinner fx:id="sp_personne" editable="true" prefWidth="320.0" promptText="Sélectionnez le nombre de personnes" />
+                              <Label fx:id="erreur_personne" text="Sélectionner plus de structures, trop de personnes" textFill="RED" visible="false">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="930.0" prefWidth="533.0">
+                     <children>
+                        <Label text="Structure(s)">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="270.0" prefWidth="533.0" stylesheets="@da.css">
+                           <content>
+                              <VBox fx:id="vbListeStructures" alignment="TOP_CENTER" prefHeight="268.0" prefWidth="531.0" spacing="20.0" />
+                           </content>
+                           <styleClass>
+                              <String fx:value="scrollPane" />
+                              <String fx:value="mapScrollPane" />
+                           </styleClass>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="84.0" prefWidth="991.0" spacing="50.0">
+               <children>
+                  <Button fx:id="btnAideOrganisation" mnemonicParsing="false" text="Aide Organisation ?" />
+                  <Button fx:id="btn_valider" mnemonicParsing="false" text="Valider" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

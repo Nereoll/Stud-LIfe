@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="600.0" stylesheets="@da.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.uga.iut2.genevent.vue.VueAideOrganisation">
+   <children>
+      <VBox prefHeight="111.0" prefWidth="579.0">
+         <children>
+            <Label text="Planifiez">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label prefHeight="514.0" prefWidth="577.0" text="Essayez au maximum d'anticiper les événements le plus tôt possible pour ne pas être surpris le jour J. Pour cela, vous pouvez vous servir du calendrier que vous avez à votre disposition dans l'application." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="115.0" prefWidth="579.0">
+         <children>
+            <Label text="Faites attention à votre budget">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="52.0" prefWidth="579.0" text="Le budget est un aspect crucial dans l'organisation d'un événement festif à destination d'un groupe nombreux. En effet, la réservation de salles ou de matériels n'est pas gratuit !" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="123.0" prefWidth="579.0">
+         <children>
+            <Label text="Communiquez">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label prefHeight="70.0" prefWidth="579.0" text="La communication envers les étudiants est bien sûr très importante (si aucune personne n'a connaissance de la soirée, personne ne viendra). Mais le plus important est la communication interne entre les membres organisateurs de l'événement. Ne négligez pas cette partie." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="150.0" prefWidth="579.0">
+         <children>
+            <Label text="Sécurisez vos événements">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label prefHeight="131.0" prefWidth="579.0" text="Un accident peut arriver à tout moment durant l'événement. La meilleure des choses est de gérer les risques (faites un peu de gestion de projet dans votre vie, R2.10b). Plus vous êtes conscients des risques, mieux vous serez préparé à leurs conséquences. Par exemple, vous pouvez prévoir des dispositifs de sécurité à l'entrée des bâtiments réservés." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="98.0" prefWidth="579.0">
+         <children>
+            <Label text="Récoltez des retours">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label text="La fin d'un événement ne signifie pas la fin d'un BDE. Les retours post-événement sont cruciaux puisqu'ils nous permettent de ne pas refaire les mêmes erreurs, de savoir quel type d'événement a plutôt bien marché etc. Vous pouvez faire des sondages sur les groupes Discord ou Instagram, par exemple." wrapText="true" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="579.0">
+         <children>
+            <Button fx:id="helpOrganizationCancelButton" mnemonicParsing="false" onAction="#cancelHelpOrganizationAction" text="C'est tout bon pour moi !" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
